@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>عن الجامعة</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cairo');
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-size: 10px;
+            font-family: 'sans-serif', Cairo ;
+        }
+
+        .yellowRow {
+            background-color: #cfb87a;
+            animation: moveInRight .5s ease-in .75s;
+            animation-fill-mode: backwards;
+        }
+
+        .whiteRow {
+            background-color: #ffffff;
+            animation: moveInLeft .5s ease-in .75s;
+            animation-fill-mode: backwards;
+        }
+
+        .imgRightClipped {
+            height: 300px;
+            background-image: url(https://s3-eu-west-1.amazonaws.com/content.argaamnews.com/7934db93-5f67-4251-b142-a15c8bc01cf0.jpg);
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+        }
+        .imgLeftClipped {
+            height: 300px;
+            background-image: url(http://www.uj.edu.sa/Files/55660/Galleries/7091/54693_uj1.jpg);
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+        }
+        .imgRightClipped-2 {
+            height: 300px;
+            background-image: url(http://www.uj.edu.sa/Files/55660/Galleries/7091/54700_books.jpg);
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+        }
+        .imgLeftClipped-2 {
+            height: 300px;
+            background-image: url(http://www.uj.edu.sa/Files/55660/Galleries/7091/54698_IMG_4259.JPG);
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .row .col-7 .h3 {
+            font-size: 4rem;
+            color: #ffffff;
+        }
+
+        .row .col-7 p {
+            color: #062a54;
+            margin-top: 1.5;
+            line-height: 2rem;
+            font-size: 1.8rem;
+        }
+
+
+        @media (max-width: 768px) {
+            .imgRightClipped {
+            clip-path: none;
+        }
+        .imgLeftClipped {
+            clip-path: none;
+        }
+        .imgRightClipped-2 {
+            clip-path: none;
+        }
+        .imgLeftClipped-2 {
+            clip-path: none;
+        }
+        }
+
+        @keyframes moveInRight {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+                }
+                
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+                }
+            }
+
+            @keyframes moveInLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+                }
+                
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+                }
+            }
+        
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="container mt-3">
+
+        <div class="row  align-items-center yellowRow">
+            <div class="col-md-5 imgRightClipped">
+            </div>
+            <div class = "col-md-7 text-right pr-md-5">
+                <h3 style="font-size: 4rem; color: #ffffff;">عن الجامعة</h3>
+                <p class="text-right" style="color: #062a54; margin-top: 1.5; line-height: 2rem; font-size: 1.8rem;">تسعى <b><span style="font-size: 2.3rem; color: #ffffff;">جامعة جدة</span></b> إلى رفع جودة مخرجاتها لتقدم تعليماً عالياً مبنياً على أفضل تطبيقات وتقنيات التعليم والتعلم، حريصة مصادرها التعليمي والإداري المتميز، أن تقف في مصاف الجامعات الرائدة في التعليم محلياً و عالمياً</p>
+            </div>
+        </div>
+
+        <div class = "row align-items-center whiteRow">
+            <div class = "col-md-7 order-2 order-md-1 text-right">
+                <h2 style="font-size: 3rem;">ضعوا القائمة هنا</h2>
+            </div>
+            <div class="col-md-5 order-1 order-md-2 imgLeftClipped">
+
+            </div>
+        </div>
+
+        <div class="row align-items-center yellowRow">
+                <div class="col-md-5 imgRightClipped-2">
+                </div>
+                <div class = "col-md-7 text-right pr-md-5">
+                    <h3 style="font-size: 4rem; color: #ffffff;">ضعوا القائمة هنا</h3>
+                </div>
+        </div>
+
+        <div class = "row align-items-center whiteRow">
+                <div class = "col-md-7 order-2 order-md-1 text-right">
+                    <h2 style="font-size: 3rem;">ضعوا القائمة هنا</h2>
+                </div>
+                <div class="col-md-5 order-1 order-md-2 imgLeftClipped-2">
+    
+                </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
